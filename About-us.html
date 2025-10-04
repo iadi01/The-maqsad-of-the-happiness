@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+ <!-- Fonts & Icons -->
+  
+
+     <style>
+
+/* ===== About Section ===== */
+/* ===== About Section - Modern Design ===== */
+body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      background: #0d0d0d;
+    }
+#about {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #000000, #000000);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(100, 165, 26, 0.075)932) 0%, transparent 70%;
+ animation: rotate 20s linear infinite;
+  z-index : 0;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#about .container {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+#about h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease forwards;
+}
+
+#about h3 {
+  font-size: 38px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+#about p .highlight {
+  color: #00ff00;
+  font-weight: 700;
+  text-shadow: 0 0 5px #00000000;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+#about ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background: rgba(69, 70, 69, 0.158);
+  border-left: 4px solid #000000;
+  border-radius: 8px;
+  color: #fffbfb;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+#about ul li:hover {
+  background: rgb(50, 51, 50);
+  transform: translateX(10px);
+  color: #fff;
+}
+
+#about ul li::before {
+  content: "";
+  color: #000000;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#about p em {
+  font-style: italic;
+  color: #22d822;
+}
+
+#about p strong {
+  color: #13dd13;
+}
+footer {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      background: #070707;
+      color: #aaa;
+    }
+
+    .footer-menu {
+  background: #22222200;          /* footer ka background */
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;             /* row layout banata hai */
+  justify-content: center;   /* center me align karega */
+  gap: 20px;                 /* link ke beech space */
+}
+
+.footer-menu ul li {
+  display: inline;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #fff;               /* white text */
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-menu ul li a:hover {
+  color: #52959e;            /* hover pe blue highlight */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #about h2 {
+    font-size: 40px;
+  }
+
+  #about h3 {
+    font-size: 30px;
+  }
+
+  #about p, #about ul li {
+    font-size: 14px;
+  }
+
+  #about ul li {
+    padding: 12px 15px;
+  }
+
+
+
+}
+
+     </style>
+
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Welcome to the legendary <span class="highlight">Maqsad Institute of Training</span><Br> –
+      the only institute where <strong>results don’t matter, maqsad does!</strong>
+    </p>
+
+    <p>Humne duniya ke sabse ajeebo-gareeb training programs banaye hain jisme aap seekhenge:</p>
+    <ul style="list-style: none; padding: 0; margin-left: 0;">
+       <li>✔ Maqsad pura karna </li>
+      <li>✔ Premium Maqsad tasks” </li>
+      <li>✔ Q&amp; Questions about “Maqsad” </li>
+    </ul>
+
+    <p><em>Yaha pe admission lene ka ek hi rule hai:</em></p>
+    <p><strong>“Bas apna Maqsad na bhule, aur usse pura karo”</strong> </p>
+
+    <h3>Admission Criteria</h3>
+    <ul style="list-style: none; padding: 0; margin-left: 0;">
+      <li> <strong>pakistani citizen</strong> — secular logo ka chhutti hai 👽</li>
+      <li> <strong>pakistani supporter</strong> — Indian's ka entry band hai </li>
+      <li> <strong>Anti-samosa</strong> — par agar aapko eendia bhi pasand ho, toh bhi aaiye — hum compromise kar lenge </li>
+    </ul>
+
+   
+  </div>
+</section>
+
+ <footer>
+    
+    </p>
+    <footer>
+    <p>&copy; 2025 Maqsad Institute. All Rights Reserved.</p><p style="margin-top: 12px; font-size: 14px; color: #ccc;">
+      Disclaimer: Humesha yaad rahe— yeh ek <strong>prank / fun</strong> website hai. Maqsad: hasi, mazaak, creativity!
+
+
+<div class="footer-menu section" id="footer-menu" name="Footer Menu">
+  <div class="widget LinkList" data-version="2" id="LinkList104">
+    <ul class="link-list list-style">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li> 
+    </ul>
+  </div>
+</div>
+  
+  </footer>
+
+</body>
+</html>

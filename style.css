@@ -1,0 +1,133 @@
+/* CSS */
+body {
+    font-family: "Sora", sans-serif;
+}
+h1, h2, h3 {
+    font-family: "Sora", sans-serif;
+}
+
+p, input, textarea {
+    font-family: "Alata", sans-serif;
+}
+
+*{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+}
+body{
+    font-family: 'outfit';
+    background: linear-gradient(#000000,#3b3b3b);
+}
+.contact-container{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h3{
+    font-weight: 600;
+    color: #33ff00;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #88be7357;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #2afa00;
+}
+.contact-inputs::placeholder{
+    color: #000000;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#50e415,#a36f6f);
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+
+    }
+    .contact-right{
+        display: none;
+    }
+}
+footer {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      background: #181818;
+      color: #aaa;
+    }
+
+    .footer-menu {
+  background: #3b3b3b00;          /* footer ka background */
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;             /* row layout banata hai */
+  justify-content: center;   /* center me align karega */
+  gap: 20px;                 /* link ke beech space */
+}
+
+.footer-menu ul li {
+  display: inline;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #fff;               /* white text */
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-menu ul li a:hover {
+  color: #52959e;            /* hover pe blue highlight */
+}
+

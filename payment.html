@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Razorpay Payment</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <h2>Pay with Razorpay</h2>
+  <button id="rzp-button1">Pay ₹1</button>
+
+  <script>
+    var options = {
+      "key": "rzp_live_ROZdsaIcFsOHYG", // get it from Razorpay dashboard
+      "amount": "100", // 499 INR in paise
+      "currency": "INR",
+      "name": "Maqsad Institute",
+      "description": "Premium Access",
+      "handler": function (response){
+          alert("Payment successful. Payment ID: " + response.razorpay_payment_id);
+      },
+      "theme": {
+          "color": "#00ff00"
+      }
+    };
+    var rzp1 = new Razorpay(options);
+    document.getElementById('rzp-button1').onclick = function(e){
+      rzp1.open();
+      e.preventDefault();
+    }
+  </script>
+</body>
+</html>
